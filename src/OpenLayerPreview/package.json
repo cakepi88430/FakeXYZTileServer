@@ -2,7 +2,7 @@
   "name": "my-app",
   "version": "1.0.0",
   "scripts": {
-    "start": "vite",
+    "start": "vite --host",
     "build": "vite build",
     "serve": "vite preview"
   },
@@ -10,6 +10,7 @@
     "vite": "^6.0.5"
   },
   "dependencies": {
+    "canvas": "^3.0.0",
     "ol": "latest"
   }
 }

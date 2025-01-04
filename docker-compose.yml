@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  fakexyznodesrv:
+    build:
+      context: .
+      dockerfile: ./docker/nodejs/Dockerfile
+    container_name: FakeXYZTileNodeServer
+    restart: always
+    tty: true
+    ports:
+      - "8080:8080" # OpenLayer preview
+      - "5000:5000" # FakeXYZTile Service
+    environment:
+      NODE_ENV: development
